@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+      .container{
+        height:1000px;
+        width:400px;
+        background-color: rgb(165, 165, 212);
+        position: relative;
+        left:200px;
+        box-shadow: 5px solid black;
+      }
+      .box{
+        height: 5px;
+        background-color: rgb(57, 57, 206);
+        font-size: x-large;
+        text-align: center;
+        padding:5%;
+        text-decoration-line:underline;
+        border:5px solid yellow;
+        outline: 3px solid rgb(240, 148, 148);
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <a href="./index.html">&#127968 Home</a>
+    <a href="./price.html">Price</a>
+    <div class="box contact">Contact Us</div>
+    <form action="./index.html">
+      <p>
+        <label for="first-name">First Name:</label>
+        <input name="first-name" type="text" placeholder="John" />
+      </p>
+      <p>
+        <label for="last-name">Last Name:</label>
+        <input name="last-name" type="text" placeholder="Lee" />
+      </p>
+     <h2>Contact Time</h2>
+     <p> 
+      <input type="radio" name="AM" value="AM"AM/><label name="AM">AM</label> 
+     </p>
+     <p> 
+      <input type="radio" name="PM" value="PM"/><label name="PM">PM</label> 
+     </p>
+     <h2>Select Service</h2>
+     <p>
+      <select name="Service" id="selector">						
+      <option value="">Select</option>						
+      <option value="Indoor">Indoor</option>						
+      <option value="Outdoor">Outdoor</option>						
+      <option value="Indoor and Outdoor">Indoor and Outdoor</option>
+      </select>						
+     </p>
+      <h3>Outdoor</h3>
+      <p><input type="checkbox" name="outdoor" value="Pressure Washing" />Pressure Washing</p>
+      <p><input type="checkbox" name="outdoor" value="Moss Removal" />Moss Removal</p>
+      <p><input type="checkbox" name="outdoor" value="Gutters" />Gutters</p>
+      <p><input type="checkbox" name="outdoor" value="Window Cleaning" />Window Cleaning</p>
+      <h3>Indoor</h3>
+      <p><input type="checkbox" name="indoor" value="General Clean" />General Clean</p>
+      <p><input type="checkbox" name="indoor" value="After Party" />After Party</p>
+      <p><input type="checkbox" name="indoor" value="Move out" />Move out</p>
+      <p><input type="checkbox" name="indoor" value="Deep Clean(Windows, Fridge, Oven etc...)" />Deep Clean(Windows, Fridge, Oven etc...)</p>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+ </body>
+</html>
